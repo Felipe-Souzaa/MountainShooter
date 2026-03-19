@@ -4,11 +4,11 @@ COLOR_PURPLE = (128, 0, 128)
 COLOR_WHITE = (255, 255, 255)
 
 # M
-MENU_OPTIONS = ('NEW GAME 1P',
-                'NEW GAME 2P - COOPERATIVE',
-                'NEW GAME 2P - COMPETITIVE',
-                'SCORE',
-                'EXIT'
+MENU_OPTIONS = ('NOVO JOGO 1P',
+                'NONO JOGO 2P - COOPERATIVO',
+                'NONO JOGO 2P - COMPETITIVO',
+                'PONTUAÇÃO',
+                'SAIR'
 )
 
 # W
