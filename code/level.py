@@ -30,8 +30,8 @@ class Level:
         pygame.time.set_timer(EVENT_ENEMY, SPAWN_TIME)
 
     def run(self):
-        #pygame.mixer.music.load(f'./asset/{self.name}.mp3')
-        #pygame.mixer.music.play(-1)
+        pygame.mixer.music.load(f'./asset/{self.name}.mp3')
+        pygame.mixer.music.play(-1)
         clock = pygame.time.Clock()
         while True:
             clock.tick(60)
@@ -54,6 +54,7 @@ class Level:
             self.level_text(14, f'FPS: {clock.get_fps():.0f}', COLOR_WHITE, (10, WIN_HEIGHT - 20))
             self.level_text(14, f'Entidades: {len(self.entity_list)}', COLOR_WHITE, (10, WIN_HEIGHT - 40))
             pygame.display.flip()
+            #Collisions
             EntityMediator.verify_collision(entity_list=self.entity_list)
             EntityMediator.verify_health(entity_list=self.entity_list)
         pass
