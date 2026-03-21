@@ -3,10 +3,10 @@
 import random
 
 from code.Const import WIN_WIDTH, WIN_HEIGHT
-from code.background import Background
-from code.enemy import Enemy
-from code.entity import Entity
-from code.player import Player
+from code.Background import Background
+from code.Enemy import Enemy
+from code.Entity import Entity
+from code.Player import Player
 
 
 class EntityFactory:
